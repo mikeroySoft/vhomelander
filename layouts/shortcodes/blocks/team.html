@@ -1,0 +1,51 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{/*    TODO:  Add abstraction here so we can just iterate through a range from items defined in a config file. */}}
+{{/*    TODO:  Should also see about having the images pull from GH directly during build vua URL predefined in a config   */}}
+{{/*    TODO:  Custom classes for people attributes */}}
+
+ <div class="container-fluid bg-darkblue py-5 text-secondary">
+    <div class="container text-secondary">
+        <h3 class="pb-3">Team:</h3>
+        <p>We are VMware! Take a look at our <a href="#">amazing team</a> and all the great work they've done!.</p>
+
+        <div class="row">
+            <div class="grid three">
+                <div class="row align-items-center">
+                    <div class="col image"><img src="/img/team-placeholder.png" height=120px width="120px" /> </div>
+                    <div class="col info">
+                        <p class="name">Product Person</p>
+                        <p class="position">Product Manager</p>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col image"><img src="/img/team-placeholder.png" height=120px width="120px" /></div>
+                    <div class="col info">
+                        <p class="name">Engineering Person</p>
+                        <p class="position">Engineer</p>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col image"><img src="/img/team-placeholder.png" height=120px width="120px"/></div>
+                    <div class="col info">
+                        <p class="name">Release Person</p>
+                        <p class="position">Release Manager</p>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col image"><img src="/img/team-placeholder.png" height=120px width="120px"/></div>
+                    <div class="col info">
+                        <p class="name">Design Person</p>
+                        <p class="position">Designer</p>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col image"><img src="/img/team-placeholder.png" height=120px width="120px"/></div>
+                    <div class="col info">
+                        <p class="name">Engineering Lead</p>
+                        <p class="position">Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<!-- TODO: Create custom class for this, allow for customization via config.toml or /assets/scss/_variables_project.scss-->
+<!-- TODO: Variable for the image, set via config.toml or other datafile -->
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div class="container-fluid bg-white py-2 mb-5">
+    <div class="container use-cases pt-3">
+        <h2>Use Cases</h2>
+        <div class="container p-0 py-3 d-flex">
+            <div class="card grid two shadow-sm">        
+                <div class="col card-body bg-primary text-center justify-content-center d-flex rounded-left">
+                    <img src="/img/administration.svg" />
+                </div>
+                <div class="col text py-5 pl-4 ml-2">
+                    <h5 class="card-title">Use Case 1</h5>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a class="btn btn-secondary btn-outline-primary btn-white" href="#">
+                    Use Case 1
+                </a>
+                </div>
+            </div>
+        </div>
+   
+        <div class="container p-0 py-3 ">
+            <div class="card grid two-left shadow-sm">
+                <div class="col card-body text py-5 pr-4 mr-2 text-right">
+                <h5 class="card-title">Use Case 2</h5>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a class="btn btn-secondary btn-outline-primary btn-white" href="#">
+                    Use Case 2
+                </a>
+                </div>
+                <div class="col card-body bg-primary text-center justify-content-center d-flex rounded-right">
+                <img src="/img/authentication.svg" />
+                </div>
+            </div>
+        </div>
+        <div class="container p-0 py-3">
+            <div class="card grid two shadow-sm">
+                <div class="col bg-primary text-center justify-content-center d-flex rounded-left">
+                    <img src="/img/security.svg" />
+                </div>
+                <div class="col card-body text py-5 pl-4 ml-2">
+                    <h5 class="card-title">Use Case 3</h5>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a class="btn btn-secondary btn-outline-primary btn-white" href="#">
+                        Use Case 3
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>

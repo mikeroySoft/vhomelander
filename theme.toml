@@ -1,0 +1,12 @@
+name = "vHomelander"
+license = "Apache 2.0"
+licenselink = "https://gitlab.eng.vmware.com/mroy/vhomelander/-/blob/main/LICENSE"
+description = "A Hugo home/landing page theme for VMware Open Source projects. Based on Google Docsy: https://docsy.dev"
+homepage = "https://gitlab.eng.vmware.com/mroy/vhomelander"
+tags = ["documentation", "multilingual", "customizable", "responsive", "docs"]
+features = []
+min_version = 0.53
+
+[author]
+  name = "Michael Roy"
+  homepage = "mroy@vmware.com"

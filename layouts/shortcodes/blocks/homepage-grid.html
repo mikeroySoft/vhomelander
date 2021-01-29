@@ -1,0 +1,28 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $col_id := .Get "color" | default .Ordinal }}
+{{ $height := .Get "height" | default "auto"  }}
+{{/* Height can be one of: auto, min, med, max, full. */}}
+
+<!-- We should convert this to Bootstrap cards -->
+<div class="container-fluid p-0 mb-4 pb-4">
+	<div class="container">
+		<div class="grid three mt-n5 text-center">
+			<!-- TODO: Change font color to that nice gray -->
+			<div class="card p-4 shadow-sm">
+				<img class="card-image-top py-1" src="/img/simple.svg" />
+				<h3 class="card-text py-3">First Value</h3>
+				<p class="card-text py-1 ">Why is this value valuable?</p>
+			</div>
+			<div class="card p-4 shadow-sm">
+				<img class="card-image-top py-1" src="/img/frictionless.svg" />
+				<h3 class="card-text py-3">Second Value</h3>
+				<p class="card-text py-1">Why is this value valuable?</p>
+			</div>
+			<div class="card p-4 shadow-sm">
+				<img class="card-image-top py-1" src="/img/seamless.svg" />
+				<h3 class="card-text py-3">Third Value</h3>
+				<p class="card-text py-1">Why is this value valuable?</p>
+			</div>
+		</div>
+	</div>
+</div>

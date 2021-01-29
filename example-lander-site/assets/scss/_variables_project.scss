@@ -1,0 +1,249 @@
+/*
+Add styles or override variables from the theme here.
+*/
+
+@import 'variables';
+@import 'support/mixins';
+@import 'base';
+
+$primary: #0091DA;
+$secondary: #F2F2F2; 
+
+
+// tweaks... mroy
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1000px
+) !default;
+
+// todo: new class to do full width, should push this further down in the desgn and provide it as a varialbe option per implementation
+// todo: like: if $config.container-full="true" use .container-full else use .container (or .container-notFull)
+.container-full {
+  width: 100%;
+  padding-right: 0px; 
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.vmw-footer-logo {
+  font-size: 12pt;
+  width: 50%;
+  height: 50%;
+}
+
+.use-cases {
+  .grid.three {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    // @include breakpoint(small) {
+    //     grid-template-columns: 1fr;
+    // }
+  }
+    
+  .grid.two {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    // @include breakpoint(small) {
+    //     grid-template-columns: 1fr;
+    // }
+  }
+
+  .grid.two-left {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    // @include breakpoint(small) {
+    //     grid-template-columns: 1fr;
+    // }
+  }
+}
+
+.bg-darkblue {
+  background-color: #1D428A !important;
+}
+
+.txt-sm {
+  font-size: 75%;
+}
+
+.btn-white {
+  color: #0091DA !important;
+  background-color: #fff !important;
+  border-color: #0091DA !important;
+}
+
+.btn-white:hover {
+  color: #0091DA !important; 
+  background-color: $primary !important;
+  border-color: #0091DA !important;
+}
+
+.btn-white:focus, .btn-white.focus {
+  color: #0091DA;
+  background-color: #fff;
+  border-color: #0091DA;
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+.btn-white.disabled, .btn-white:disabled {
+  color: #0091DA;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-white:not(:disabled):not(.disabled):active, .btn-white:not(:disabled):not(.disabled).active,
+.show > .btn-white.dropdown-toggle {
+  color: #0091DA;
+  background-color: #fff;
+  border-color: #0091DA;
+}
+
+.btn-white:not(:disabled):not(.disabled):active:focus, .btn-white:not(:disabled):not(.disabled).active:focus,
+.show > .btn-white.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+// "no mixin named button-size
+// .btn-xl {
+//   @include button-size($btn-padding-y-xl, $btn-padding-x-xl, $btn-font-size-xl, $btn-line-height-xl, $btn-border-radius-xl);
+// }
+
+// $font-family-base: "Metropolis-Light", Helvetica, sans-serif;
+// $metropolis-light: $font-family-base;
+// $metropolis-light-italic: "Metropolis-LightItalic", Helvetica, sans-serif;
+// $metropolis-regular: "Metropolis-Regular", Helvetica, sans-serif;
+// $metropolis-regular-italic: "Metropolis-RegularItalic", Helvetica, sans-serif;
+// $metropolis-medium: "Metropolis-Medium", Helvetica, sans-serif;
+// $metropolis-medium-italic: "Metropolis-MediumItalic", Helvetica, sans-serif;
+// $metropolis-bold: "Metropolis-Bold", Helvetica, sans-serif;
+// $metropolis-bold-italic: "Metropolis-BoldItalic", Helvetica, sans-serif;
+// $metropolis-semibold: "Metropolis-SemiBold", Helvetica, sans-serif;
+// $metropolis-semibold-italic: "Metropolis-SemiBoldItalic", Helvetica, sans-serif;
+
+ 
+// .navbar {
+// 	border-radius: 0;
+// 	border: none;
+// 	margin-bottom: 0;
+// 	min-height: 72px;
+// }
+
+// .navbar-inverse .navbar-nav > li > a {
+// 	color: #ffffff;
+// 	font-family: Lato;
+// 	font-size: 1.7em;
+// 	font-weight: 300;
+// 	padding: 30px 25px 33px 25px;
+// }
+
+// .navbar-inverse .navbar-nav li a:hover {
+// 	background-color: #444444;
+// 	transition: 0.7s all linear;
+// 	height: 100%;
+// }
+
+header {
+  .wrapper {
+      padding: 10px 20px;
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .desktop-links {
+      //float: right;
+      //margin: 15px 0px 0px 0px;
+      padding-left: 0px;
+      color: $gray-800;
+  }
+  a {
+      color: $gray-700;
+      font-family: $metropolis-light;
+      &.active {
+          font-family: $metropolis-medium;
+      }
+  }
+  li img {
+      vertical-align: bottom;
+      margin-right: 10px;
+  }
+  .mobile {
+     display: none;
+  }
+  @include breakpoint(medium) {
+      .desktop-links li {
+          padding-right: 10px;
+      }
+  }
+  @include breakpoint(small) {
+      .expanded-icon {
+          display: none;
+          padding: 11px 3px 0px 0px;
+      }
+      .collapsed-icon {
+          padding-top: 12px;
+      }
+      .mobile-menu-visible {
+          .mobile {
+              display: block;
+              .collapsed-icon {
+                  display: none;
+              }
+              .expanded-icon {
+                  display: block;
+              }
+          }
+      }
+      position: relative;
+      .desktop-links {
+          display: none;
+      }
+      .mobile {
+          display: block;
+      }
+      button {
+          float: right;
+          &:focus {
+              outline: none;
+          }
+      }
+      ul {
+          padding-left: 0px;
+          li {
+              display: block;
+              margin: 20px 0px;
+          }
+      }
+      .mobile-menu {
+          position: absolute;
+          background-color: #fff;
+          width: 100%;
+          top: 70px;
+          left: 0px;
+          padding-bottom: 20px;
+          display: none;
+          .header-links {
+              margin: 0px 20px;
+          }
+          .social {
+              margin: 0px 20px;
+              padding-top: 20px;
+              img {
+                  vertical-align: middle;
+                  padding-right: 10px;
+              }
+              a {
+                  font-size: 14px;
+                  padding-right: 35px;
+                  &:last-of-type {
+                      padding-right: 0px;
+                  }
+              }
+          }
+      }
+  }
+}
