@@ -24,6 +24,21 @@ $enable-shadows: false;
 $td-enable-google-fonts: true !default;
 
 
+// here are our Fonts
+
+$font-family-base: "Metropolis-Light", Helvetica, sans-serif;
+$metropolis-light: $font-family-base;
+$metropolis-light-italic: "Metropolis-LightItalic", Helvetica, sans-serif;
+$metropolis-regular: "Metropolis-Regular", Helvetica, sans-serif;
+$metropolis-regular-italic: "Metropolis-RegularItalic", Helvetica, sans-serif;
+$metropolis-medium: "Metropolis-Medium", Helvetica, sans-serif;
+$metropolis-medium-italic: "Metropolis-MediumItalic", Helvetica, sans-serif;
+$metropolis-bold: "Metropolis-Bold", Helvetica, sans-serif;
+$metropolis-bold-italic: "Metropolis-BoldItalic", Helvetica, sans-serif;
+$metropolis-semibold: "Metropolis-SemiBold", Helvetica, sans-serif;
+$metropolis-semibold-italic: "Metropolis-SemiBoldItalic", Helvetica, sans-serif;
+
+
 
 // Theme colors
 
@@ -52,6 +67,9 @@ $gray-700: #495057 !default;
 $gray-800: #333 !default;
 $gray-900: #222 !default;
 $black: #000 !default;
+
+$lightgrey: $gray-500 !default;
+$bg-darkblue: #1D428A !default;
 
 $code-color: darken($secondary, 20%) !default;
 

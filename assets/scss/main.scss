@@ -3,6 +3,13 @@
 @import "variables";
 @import "support/mixins";
 
+// mroy our imports
+@import 'header';
+@import 'footer';
+@import 'base';
+@import 'components';
+
+
 @import "../vendor/bootstrap/scss/bootstrap";
 
 @import "../vendor/Font-Awesome/scss/fontawesome.scss";
@@ -30,6 +37,12 @@
 @if $td-enable-google-fonts {
     @import url($web-font-path);
 }
+
+// Import our fonts if we enable the option in settings (which we should since we're using it...)
+// currently the variables are not set and there isn't an option in config.toml
+// @if $vh-enable-vmw-fonts {
+//     @import url($vmw-font-path);
+// }
 
 footer {
     min-height: 150px;

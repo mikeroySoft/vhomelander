@@ -23,19 +23,21 @@ The following are basic prerequisites for using vHomelander in your site:
 <!-- ## Example and usage
 
 TODO: Create this repo
-You can find an example project that uses vHomelander in the [vHomelander Example Project repo](https://github.com/mikeroysoft/vhomelander-example).The vHomelander Example Project is hosted at [https://example.vhomelander.dev/](https://example.vhomelander.dev/). -->
+You can find an example project that uses vHomelander in the [vHomelander Example Project repo](https://github.com/mikeroysoft/vhomelander-example).The vHomelander Example Project is hosted at [https://mikeroysoft.github.io/vhomelander/](https://mikeroysoft.github.io/vhomelander/). -->
 
 To use the vHomelander theme for your own site:
 
   - (Recommended) Copy the [example project](https://github.com/mikeroysoft/vhomelander-example),
      which includes the vHomelander theme as a submodule.
     You can customize this pre-configured basic site into your own vHomelander themed site. 
+    
   
   - Add vHomelander to your existing Hugo site repo's `themes` directory. You can either add vHomelander as a Git submodule, or 
     clone the vHomelander theme into your project.
 
-<!-- See the [vHomelander Getting Started Guide](https://vHomelander.dev/docs/getting-started/) for 
-details about the various usage options. -->
+    Most of the necessary content (menus, buttons, hero text, 'featured' images) can be added into the config.toml and index.html files by using shortcode blocks.
+See the [vHomelander Getting Started Guide](https://mikeroysoft.github.io/vhomelander/docs/getting-started/) for 
+details about the various usage options.
 
 ## Documentation
 

@@ -19,8 +19,3 @@ module.exports = {
         autoprefixer: {}
     },
 }
-
-// ES6 compatible
-// export const plugins = {
-//     autoprefixer: {}
-// };
