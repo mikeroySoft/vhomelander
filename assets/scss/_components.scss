@@ -144,12 +144,19 @@
     }
     p {
         font-size: 16px;
+        color: $white;
     }
     a {
-        color: $white;
+        color: $secondary;
         font-weight: 300;
         text-decoration: underline;
+        &:hover {
+            color: $primary;
+        }
     }
+
+    
+    
     .grid.three {
         row-gap: 40px;
         margin: 40px 0px;
