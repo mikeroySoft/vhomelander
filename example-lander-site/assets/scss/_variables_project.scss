@@ -125,6 +125,14 @@ $container-max-widths: (
   box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
 
+.p-5w {
+  // padding: 2.5rem !important;
+  padding-top: 2rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+}
+
 // "no mixin named button-size
 // .btn-xl {
 //   @include button-size($btn-padding-y-xl, $btn-padding-x-xl, $btn-font-size-xl, $btn-line-height-xl, $btn-border-radius-xl);
