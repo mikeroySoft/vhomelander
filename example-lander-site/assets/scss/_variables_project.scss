@@ -34,6 +34,16 @@ $container-max-widths: (
   justify-content: space-between;
 }
 
+//     max-width: 980px;
+//     margin: 0px auto;
+//     padding: 20px;
+//     @include breakpoint(small) {
+//         max-width: 100%;
+//     }
+//     @include breakpoint(medium) {
+//     }
+// }
+
 .vmw-footer-logo {
   font-size: 12pt;
   width: 50%;
