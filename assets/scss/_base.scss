@@ -14,32 +14,32 @@ $metropolis-bold-italic: "Metropolis-BoldItalic", Helvetica, sans-serif;
 $metropolis-semibold: "Metropolis-SemiBold", Helvetica, sans-serif;
 $metropolis-semibold-italic: "Metropolis-SemiBoldItalic", Helvetica, sans-serif;
 
-// body {
-//     font-family: $font-family-base;
-//     margin: 0px;
-//     line-height: 1.25;
-// }
-// .wrapper {
-//     max-width: 980px;
-//     margin: 0px auto;
-//     padding: 20px;
-//     @include breakpoint(small) {
-//         max-width: 100%;
-//     }
-//     @include breakpoint(medium) {
-//     }
-// }
-// .clearfix {
-// 	*zoom: 1;
-// 	&:before, &:after {
-// 		display: table;
-// 		content: "";
-// 		line-height: 0;
-// 	}
-// 	&:after {
-// 		clear: both;
-// 	}
-// }
+body {
+    font-family: $font-family-base;
+    margin: 0px;
+    line-height: 1.25;
+}
+.wrapper {
+    max-width: 980px;
+    margin: 0px auto;
+    padding: 20px;
+    @include breakpoint(small) {
+        max-width: 100%;
+    }
+    @include breakpoint(medium) {
+    }
+}
+.clearfix {
+	*zoom: 1;
+	&:before, &:after {
+		display: table;
+		content: "";
+		line-height: 0;
+	}
+	&:after {
+		clear: both;
+	}
+}
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
