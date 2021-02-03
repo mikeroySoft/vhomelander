@@ -1,7 +1,15 @@
 {{ $cover := .HasShortcode "blocks/cover" }}
 
 {{/* TODO: Need to abstract this mess a bit so a user can pass vars from index.html and/or config.toml and it represents here */}}
+{{/* TODO: Need to set conditional 'if Seach' then adjust the right column to be near the edge of right side of the page */}}
+
+{{/* added quick _if eq_ to use a different nav for the /docs/ pages */}}
+{{ if eq .Type "docs" }}
+<div class="container-fluid pl-3 pr-5" id="navbarish">
+	{{ else }}
 <div class="container pl-0 pr-3" id="navbarish">
+	{{ end }}
+
 	<nav class="js-navbar-scroll td-navbar navbar-expand-md navbar-dark {{ if $cover}} td-navbar-cover {{ end }}flex-md-row mx-0 px-0" role="navigation">
         <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
 		<span class="navbar-logo">{{ if .Site.Params.ui.navbar_logo }}{{ with resources.Get "icons/logo.svg" }}{{ ( . | minify).Content | safeHTML }}{{ end }}{{ end }}</span><span class="text-uppercase font-weight-bold">{{ .Site.Title }}</span>
@@ -52,7 +60,7 @@
 			}
 			</script>
 
-		<button type="button" class="td-sidebar__toggle btn btn-link d-md-none p-0 ml-3 collapsed" data-toggle="collapse" data-target="#menu_items" onclick="mobileNavToggle()">
+		<button type="button" class="btn btn-link d-md-none p-0 ml-3 collapsed" data-toggle="collapse" data-target="#menu_items" onclick="mobileNavToggle()">
 			<!-- <span class="sr-only">Toggle navigation</span> -->
 			<img class="collapsed-icon" src="/img/hamburger.svg" alt="Mobile nav icon">
 			<img class="expanded-icon" src="/img/close.svg" alt="Mobile nav icon">
@@ -95,8 +103,8 @@
 					</ul>
 		  </div>
 
-
-	<div class="navbar-nav d-none d-lg-block">{{ partial "search-input.html" . }}</div>
-	
+{{ if eq .Type "docs" }}
+ <div class="navbar-nav d-none d-lg-block">{{ partial "search-input.html" . }}</div>
+	{{ end }}
 	</nav>
 </div>

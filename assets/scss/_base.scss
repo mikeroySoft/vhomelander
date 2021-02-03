@@ -7,7 +7,9 @@ $metropolis-light: $font-family-base;
 $metropolis-light-italic: "Metropolis-LightItalic", Helvetica, sans-serif;
 $metropolis-regular: "Metropolis-Regular", Helvetica, sans-serif;
 $metropolis-regular-italic: "Metropolis-RegularItalic", Helvetica, sans-serif;
-$metropolis-medium: "Metropolis-Medium", Helvetica, sans-serif;
+// Sledgehammer for now... need to seperate the light and medium styles better 
+// (i.e. it makes sense on Home pages but not Docs)
+$metropolis-medium: "Metropolis-Light", Helvetica, sans-serif;
 $metropolis-medium-italic: "Metropolis-MediumItalic", Helvetica, sans-serif;
 $metropolis-bold: "Metropolis-Bold", Helvetica, sans-serif;
 $metropolis-bold-italic: "Metropolis-BoldItalic", Helvetica, sans-serif;

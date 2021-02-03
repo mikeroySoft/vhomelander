@@ -1,3 +1,4 @@
 # How to Contribute
 
-coming soon
+
+We'd love to accept your patches and contributions to this project once we're ready.
