@@ -7,7 +7,7 @@ Bootstrap variables overrides for theme.
 See https://github.com/twbs/bootstrap/pull/23260
 */
 
-@fa-font-path :        "../webfonts";
+// @fa-font-path :        "../webfonts";
 
 // Bootstrap flags. For more, see https://getbootstrap.com/docs/4.0/getting-started/theming/
 //$enable-gradients: true !default;
@@ -68,7 +68,7 @@ $gray-800: #333 !default;
 $gray-900: #222 !default;
 $black: #000 !default;
 
-$lightgrey: $gray-500 !default;
+$lightgray: $gray-500 !default;
 $bg-darkblue: #1D428A !default;
 
 $code-color: darken($secondary, 20%) !default;
