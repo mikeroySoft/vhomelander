@@ -1,15 +1,14 @@
 ---
-title: About Docsy
+title: About vHomelander
 linkTitle: About
 menu:
   main:
     weight: 10
-layout: docs
 ---
 
-{{% blocks/cover title="About Docsy" height="auto" %}}
+{{% blocks/cover title="About vHomelander" %}}
 
-Docsy is a pre-configured Hugo theme that provides the core features and behaviors needed to create a technical documentation site. Use Docsy to set up your documentation website, including an optional Blog section, and then spend your time focusing on authoring technical content. Depending on how you choose to configure Docsy and whether you use a hosting service that supports continuous builds, you can even just add your Markdown or HTML content file into a folder on your source repository, and then sit back while it automatically gets added to your site - complete with updated menus.
+vHomelander is a pre-configured Hugo theme that provides the core features and behaviors needed to create a technical documentation site. Use vHomelander to set up your documentation website, including an optional Blog section, and then spend your time focusing on authoring technical content. Depending on how you choose to configure vHomelander and whether you use a hosting service that supports continuous builds, you can even just add your Markdown or HTML content file into a folder on your source repository, and then sit back while it automatically gets added to your site - complete with updated menus.
 
 Read on to find out more, or visit our [documentation](/docs/) to get started!
 {{% /blocks/cover %}}
@@ -31,11 +30,11 @@ Once you have your content, you use a technical documentation site to publish yo
 {{% /blocks/section %}}
 
 {{% blocks/section type="section" color="white" %}}
-## How does Docsy help?
+## How does vHomelander help?
 
-Particularly when working with open source projects, it can be difficult to figure out how to turn all your product knowledge into a website that helps and engages your users. **Enter Docsy!**
+Particularly when working with open source projects, it can be difficult to figure out how to turn all your product knowledge into a website that helps and engages your users. **Enter vHomelander!**
 
-Docsy gives you a theme for the [Hugo](https://gohugo.io/) static site generator, an established open source tool that builds ready-to-serve websites from a set of theme and content files. The Docsy theme provides you with useful stuff for a technical documentation site that *isn’t* your own content:
+vHomelander gives you a theme for the [Hugo](https://gohugo.io/) static site generator, an established open source tool that builds ready-to-serve websites from a set of theme and content files. The vHomelander theme provides you with useful stuff for a technical documentation site that *isn’t* your own content:
 
 <table>
   <tr>
@@ -77,7 +76,7 @@ Docsy gives you a theme for the [Hugo](https://gohugo.io/) static site generator
   <tr>
    <td><strong>Simple previews and deployment</strong>
    </td>
-   <td>Because Docsy is a Hugo theme, you get all the advantages of building with Hugo - simple, fast local previews, and, depending on your deployment options, continuous deployment from Github or other Git providers.
+   <td>Because vHomelander is a Hugo theme, you get all the advantages of building with Hugo - simple, fast local previews, and, depending on your deployment options, continuous deployment from Github or other Git providers.
    </td>
   </tr>
 </table>
@@ -90,7 +89,7 @@ publish, add that content to your project and deploy it to your site using any o
 
 ### Built-in integration with common tools
 
-The Docsy template currently includes built-in integration with the following tools:
+The vHomelander template currently includes built-in integration with the following tools:
 
 * [**GitHub**](https://github.com): Get in-page links directly to your GitHub repo and provide your users with a
    convenient pathway to providing feedback, opening issues, and even suggesting changes through Pull Requests.
@@ -103,35 +102,35 @@ The Docsy template currently includes built-in integration with the following to
 
 ### Make it your own
 
-You can configure the Docsy theme as much or as little as you like, anything from changing the colours and images to adding your own type of page layout. [Learn more...](/docs/adding-content/lookandfeel/)
+You can configure the vHomelander theme as much or as little as you like, anything from changing the colours and images to adding your own type of page layout. [Learn more...](/docs/adding-content/lookandfeel/)
 
 ### Get organized
 
 We believe a well-organized documentation set can really help your users find the information they need, when they need it - whether it’s a “Hello World” tutorial when they’re starting out or a single core task they need to do to finish a complicated app. We also believe that having well-organized docs help you create comprehensive docs, as it’s easier to see when you’re missing something important. [Learn more...](/docs/best-practices/organizing-content/)
 
-Docsy also provides autogenerated site navigation based on how you organize your source files, so once you’ve organized your docs in folders in Github or other source control, you’ve got menus for your users to quickly reach the doc they need. [Learn more...](/docs/adding-content/navigation/)
+vHomelander also provides autogenerated site navigation based on how you organize your source files, so once you’ve organized your docs in folders in Github or other source control, you’ve got menus for your users to quickly reach the doc they need. [Learn more...](/docs/adding-content/navigation/)
 
 
 ### Keep up to date
 
 Spend time setting up your technical documentation site once, and then focus on what you do best. We work closely with 
-the Hugo team and have individuals actively maintaining the Docsy theme. You can easily get and 
-apply Docsy updates to your site, as well as open feature requests to improve the 
+the Hugo team and have individuals actively maintaining the vHomelander theme. You can easily get and 
+apply vHomelander updates to your site, as well as open feature requests to improve the 
 template, or even add new behaviors. [Learn more...](/docs/updating/)
 
 
 ### Focus on great content
 
-Because Docsy helps you create and serve a well-organized, navigable technical documentation set, it frees you up to create and maintain great reliable, comprehensive content that your users can enjoy and trust.
+Because vHomelander helps you create and serve a well-organized, navigable technical documentation set, it frees you up to create and maintain great reliable, comprehensive content that your users can enjoy and trust.
 {{% /blocks/section %}}
 {{% blocks/section type="section" color="primary" %}}
-## What's next for Docsy?
+## What's next for vHomelander?
 
-Docsy is an open source project and we love getting patches and contributions to make Docsy and its docs even better. We hope to continue to make improvements to the theme along with the Docsy community.
+vHomelander is an open source project and we love getting patches and contributions to make vHomelander and its docs even better. We hope to continue to make improvements to the theme along with the vHomelander community.
 
-Visit our [Issues](https://github.com/google/docsy/issues) to see what we're currently working on. If there's something you'd like to see in Docsy, please create an issue yourself - or assign yourself an issue if you'd like to fix or add something! See our [contribution guidelines](/docs/contribution-guidelines/) for more information.
+Visit our [Issues](https://github.com/mikeroysoft/vHomelander/issues) to see what we're currently working on. If there's something you'd like to see in vHomelander, please create an issue yourself - or assign yourself an issue if you'd like to fix or add something! See our [contribution guidelines](/docs/contribution-guidelines/) for more information.
 
-You can find out how to update your site to the latest version of Docsy in [Keeping the theme up to date](/docs/updating/).
+You can find out how to update your site to the latest version of vHomelander in [Keeping the theme up to date](/docs/updating/).
 {{% /blocks/section %}}
 
 
