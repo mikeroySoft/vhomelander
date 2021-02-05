@@ -22,15 +22,15 @@ linkTitle = "vHomelander"
 
 	textLead1="First Value"
 	textSub1="Why is this valueable?"
-	img1=""
+	gridImg1="derp"
 
 	textLead2="Second Value" 
 	textSub2="Why is this valueable?"
-	img2=""
+	gridImg2=""
 
 	textLead3="Third Value"
 	textSub3="Why is this valueable?"
-	img3="" >}}
+	gridImg3="" >}}
 
 <!-- blocks/homepage-grid End -->
 
