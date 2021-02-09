@@ -50,14 +50,14 @@
 		<!-- End of dark mode toggle in navbar -->
 		
 		{{ if  .Site.Params.versions }}
-		<div class="navbar-nav dropdown">
+		<div class="navbar-nav dropdown border-0">
 			<li class="nav-item">
 				{{ partial "navbar-version-selector.html" . }}
 			</li>
 		</div>
 		{{ end }}
 		{{ if  (gt (len .Site.Home.Translations) 0) }}
-		<div class="navbar-nav dropdown">
+		<div class="navbar-nav dropdown border-0">
 			<li class="nav-item">
 				{{ partial "navbar-lang-selector.html" . }}
 			</li>
