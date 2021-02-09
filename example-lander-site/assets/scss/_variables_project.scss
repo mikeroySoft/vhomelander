@@ -6,12 +6,6 @@ Add styles or override variables from the theme here.
 // @import 'support/mixins';
 // @import 'components';
 
-@import '~normalize.css/normalize.css'; // css reset
-@import '~@cds/core/global.min.css'; // clarity global styles
-@import '~@cds/core/styles/module.shims.min.css'; // non-evergreen browser shims
-@import '~@cds/city/css/bundles/default.min.css'; // load base font
-
-
 
 // tweaks... mroy
 $container-max-widths: (
