@@ -98,7 +98,7 @@
             }
         }
         .text {
-            border: 1px solid $lightgray;
+            // border: 1px solid $lightgray;
             padding: 30px;
             grid-area: text;
             a.button {
@@ -128,6 +128,32 @@
                 "text";
         }
     }
+    .grid.three {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        @include breakpoint(small) {
+            grid-template-columns: 1fr;
+        }
+      }
+        
+      .grid.two {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        @include breakpoint(small) {
+            grid-template-columns: 1fr;
+        }
+      }
+    
+      .grid.two-left {
+        display: grid;
+        grid-template-columns: 1fr 220px;
+         @include breakpoint(small) {
+             grid-template-columns: 1fr;
+        }
+      }
+      
     h2 {
         color: $black;
     }

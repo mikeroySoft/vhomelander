@@ -99,6 +99,8 @@ darkmode = false
 # This menu appears only if you have at least one [params.versions] set.
 version_menu = "Releases"
 
+
+
 # Flag used in the "version-banner" partial to decide whether to display a 
 # banner on every page indicating that this is an archived version of the docs.
 # Set this flag to "true" if you want to display the banner.
@@ -107,7 +109,7 @@ archived_version = false
 # The version number for the version of the docs represented in this doc set.
 # Used in the "version-banner" partial to display a version number for the 
 # current doc set.
-version = "0.0"
+version = "1.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
@@ -215,4 +217,10 @@ theme = "default"
 [params.print]
 disable_toc = false
 
+[[params.versions]]
+  version = "v1 - Latest"
+  url = "/docs/"
 
+[[params.versions]]
+  version = "v0"
+  url = "#"
