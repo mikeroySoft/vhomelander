@@ -1,7 +1,6 @@
 {{ $cover := .HasShortcode "blocks/cover" }}
 
 {{/* TODO: Need to abstract this mess a bit so a user can pass vars from index.html and/or config.toml and it represents here */}}
-{{/* TODO: Need to set conditional 'if Seach' then adjust the right column to be near the edge of right side of the page */}}
 
 {{/* added quick _if eq_ to use a different nav for the /docs/ pages */}}
 {{ if eq .Type "docs" }}
@@ -9,102 +8,63 @@
 	{{ else }}
 <div class="container pl-0 pr-3" id="navbarish">
 	{{ end }}
-
-	<nav class="js-navbar-scroll td-navbar navbar-expand-md navbar-dark {{ if $cover}} td-navbar-cover {{ end }}flex-md-row mx-0 px-0" role="navigation">
-        <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
+	
+  <nav class="navbar navbar-default navbar-dark navbar-expand-md d-flex justify-content-between {{ if $cover}} td-navbar-cover {{ end }}" role="navigation" data-toggle="collapse" data-target="#menu_items" aria-expanded="false" aria-controls="navbar">
+	<div class="navbar-header d-flex align-items-center justify-content-between">   
+		<a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
 		<span class="navbar-logo">{{ if .Site.Params.ui.navbar_logo }}{{ with resources.Get "icons/logo.svg" }}{{ ( . | minify).Content | safeHTML }}{{ end }}{{ end }}</span><span class="text-uppercase font-weight-bold">{{ .Site.Title }}</span>
-	</a>
-		<div id="menu_items" class="td-navbar-nav-scroll navbar-collapse ml-md-auto justify-content-end">
-			<ul class="navbar-nav">
-			{{ $p := . }}
-			{{ range .Site.Menus.main }}
+		</a>
+		<div class="row ml-auto">
+			<button type="button" class="navbar-toggler third-button collapsed" data-toggle="collapse" data-target="#menu_items" aria-expanded="false" aria-controls="navbar">
+				<!-- <span class="sr-only">Toggle navigation</span> -->
+				<!-- <span class="navbar-toggler-icon "></span> -->
+				<div class="animated-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+		</div>
+	</div>
+	<div id="menu_items" class="navbar-collapse collapse ml-md-auto justify-content-end text-center">
+		<ul class="nav navbar-nav">
+		{{ $p := . }}
+		{{ range .Site.Menus.main }}
+		<li class="nav-item p-0">
+			{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
+			{{ with .Page }}
+			{{ $active = or $active ( $.IsDescendant .)  }}
+			{{ end }}
+			{{ $url := urls.Parse .URL }}
+			{{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
+			<a {{ if .Identifier }}id="{{ .Identifier }}"{{ end }} class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+		</li>
+		{{ end }}
+		
+		<!-- dark mode toolbar -->
+		{{ if  .Site.Params.darkmode }}
+		<li class="nav-item toggle d-lg-block">
+			{{ partial "toggle.html" . }}
+		</li>
+		{{ end }}
+		<!-- End of dark mode toggle in navbar -->
+		
+		{{ if  .Site.Params.versions }}
+		<div class="navbar-nav dropdown">
 			<li class="nav-item">
-				{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
-				{{ with .Page }}
-				{{ $active = or $active ( $.IsDescendant .)  }}
-				{{ end }}
-				{{ $url := urls.Parse .URL }}
-				{{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
-				<a {{ if .Identifier }}id="{{ .Identifier }}"{{ end }} class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
-			</li>
-			{{ end }}
-			
-			<!-- dark mode toolbar -->
-			{{ if  .Site.Params.darkmode }}
-			<li class="nav-item toggle d-lg-block">
-				{{ partial "toggle.html" . }}
-			</li>
-			{{ end }}
-			<!-- End of dark mode toggle in navbar -->
-			
-			{{ if  .Site.Params.versions }}
-			<li class="nav-item dropdown d-none d-lg-block">
 				{{ partial "navbar-version-selector.html" . }}
 			</li>
-			{{ end }}
-			{{ if  (gt (len .Site.Home.Translations) 0) }}
-			<li class="nav-item dropdown d-none d-lg-block">
+		</div>
+		{{ end }}
+		{{ if  (gt (len .Site.Home.Translations) 0) }}
+		<div class="navbar-nav dropdown">
+			<li class="nav-item">
 				{{ partial "navbar-lang-selector.html" . }}
 			</li>
-			{{ end }}
-
-			</ul>
 		</div>
-			<script>
-			// TODO: move to using a bootstrap function for this, I swear I had it working earlier, but some of the multi-layers of styling must have got in the way
-			// so, will need to revisit this later on.
-			"use strict"
-			function mobileNavToggle() {
-				var menu = document.getElementById("mobile-menu").parentElement;
-				menu.classList.toggle('mobile-menu-visible');
-			}
-			</script>
+		{{ end }}
 
-		<button type="button" class="btn btn-link d-md-none p-0 ml-3 collapsed" data-toggle="collapse" data-target="#menu_items" onclick="mobileNavToggle()">
-			<!-- <span class="sr-only">Toggle navigation</span> -->
-			<img class="collapsed-icon" src="/img/hamburger.svg" alt="Mobile nav icon">
-			<img class="expanded-icon" src="/img/close.svg" alt="Mobile nav icon">
-		  </button>
-		  <div id="mobile-menu" class="mobile-menu mobile">
-			<ul class="header-links navbar-nav text-right">
-				<!-- <ul class=""> -->
-					{{ $p := . }}
-					{{ range .Site.Menus.main }}
-					<li class="nav-item pr-3">
-						{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
-						{{ with .Page }}
-						{{ $active = or $active ( $.IsDescendant .)  }}
-						{{ end }}
-						{{ $url := urls.Parse .URL }}
-						{{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
-						<a {{ if .Identifier }}id="{{ .Identifier }}"{{ end }} class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
-					</li>
-					{{ end }}
-					
-					<!-- dark mode toolbar -->
-					{{ if  .Site.Params.darkmode }}
-					<li class="nav-item toggle d-lg-block">
-						{{ partial "toggle.html" . }}
-					</li>
-					{{ end }}
-					<!-- End of dark mode toggle in navbar -->
-					
-					{{ if  .Site.Params.versions }}
-					<li class="nav-item dropdown d-none d-lg-block">
-						{{ partial "navbar-version-selector.html" . }}
-					</li>
-					{{ end }}
-					{{ if  (gt (len .Site.Home.Translations) 0) }}
-					<li class="nav-item dropdown d-none d-lg-block">
-						{{ partial "navbar-lang-selector.html" . }}
-					</li>
-					{{ end }}
-		
-					</ul>
-		  </div>
-
-{{ if eq .Type "docs" }}
- <div class="navbar-nav d-none d-lg-block">{{ partial "search-input.html" . }}</div>
-	{{ end }}
-	</nav>
+		</ul>
+	</div>
+  </nav>
 </div>
