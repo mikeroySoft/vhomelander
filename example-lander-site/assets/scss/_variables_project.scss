@@ -49,33 +49,6 @@ $container-max-widths: (
   height: 50%;
 }
 
-.use-cases {
-  .grid.three {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 20px;
-    @include breakpoint(small) {
-        grid-template-columns: 1fr;
-    }
-  }
-    
-  .grid.two {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    @include breakpoint(small) {
-        grid-template-columns: 1fr;
-    }
-  }
-
-  .grid.two-left {
-    display: grid;
-    grid-template-columns: 1fr 220px;
-     @include breakpoint(small) {
-         grid-template-columns: 1fr;
-    }
-  }
-}
 
 .bg-darkblue {
   background-color: $bg-darkblue !important;
