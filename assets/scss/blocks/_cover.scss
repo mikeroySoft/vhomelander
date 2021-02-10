@@ -11,12 +11,14 @@
     text-align: left;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    // padding-block: 5rem;
-    background: {
-        repeat: no-repeat;
-        position: 50% 0;
-        size: cover;
-    };
+    //padding-block: 5rem;
+        background: {
+            repeat: no-repeat;
+            position: 50% 0;
+            size: cover;
+        
+        };
+    background-image: linear-gradient($primary, $primary-darken);
 
     & > .byline {
         position: absolute;

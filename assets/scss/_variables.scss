@@ -44,6 +44,7 @@ $metropolis-semibold-italic: "Metropolis-SemiBoldItalic", Helvetica, sans-serif;
 
 $primary: #0091DA !default;
 $primary-light: lighten($primary, 75%) !default;
+$primary-darken: darken($primary,15%) !default;
 $secondary: #F2F2F4 !default;
 $success: #3772FF !default;
 $info: #F2F2F2 !default;
@@ -162,26 +163,5 @@ $navbar-dark-disabled-color: rgba($secondary, 0.25) !default;
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light".
 $yiq-contrasted-threshold: 200 !default;
 
- 
 
-// Needed for now, but we do need to migrate these values... 
-// they're 'global' but they need to be restricted to the scope of the element they're referring to
-// so I'll have to nest these in a element.
-// .grid.three {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     row-gap: 20px;
-//     column-gap: 20px;
-//     @include breakpoint(small) {
-//         grid-template-columns: 1fr;
-//     }
-// }
-    
-// .grid.two {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     // @include breakpoint(small) {
-//     //     grid-template-columns: 1fr;
-//     // }
-// }
 

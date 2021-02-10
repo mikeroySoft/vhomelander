@@ -573,3 +573,11 @@
 .card-image-top {
     fill: $primary
 }
+
+.bg-gradient-dark {
+    background-image: linear-gradient($primary, $primary-darken);
+};
+
+.bg-gradient-light {
+    background-image: linear-gradient($primary, $primary-light);
+};

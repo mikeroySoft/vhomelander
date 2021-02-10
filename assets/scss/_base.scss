@@ -21,16 +21,16 @@ body {
     margin: 0px;
     line-height: 1.25;
 }
-.wrapper {
-    max-width: 980px;
-    margin: 0px auto;
-    padding: 20px;
-    @include breakpoint(small) {
-        max-width: 100%;
-    }
-    @include breakpoint(medium) {
-    }
-}
+// .wrapper {
+//     max-width: 980px;
+//     margin: 0px auto;
+//     padding: 20px;
+//     @include breakpoint(small) {
+//         max-width: 100%;
+//     }
+//     @include breakpoint(medium) {
+//     }
+// }
 .clearfix {
 	*zoom: 1;
 	&:before, &:after {
