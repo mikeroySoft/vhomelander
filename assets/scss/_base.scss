@@ -58,10 +58,13 @@ h4 {
     font-size: 18px;
 }
 li {
-    list-style-type: none;
-    display: inline;
-    padding-right: 25px;
-    font-size: 12px;
+    //list-style-type:$font-family-base;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    //padding-right: 25px;
+    color: $gray-700;
+    padding-bottom: 10px;
+    //font-size: 14px;
     &:last-of-type {
         padding-right: 0px;
     }
@@ -69,11 +72,11 @@ li {
 p {
     line-height: 1.5em;
     font-weight: 300;
-    font-size: 14px;
+    //font-size: 14px;
     color: $gray-700;
 }
 a {
-    font-size: 16px;
+    font-size:inherit;
     text-decoration: none;
     color: $blue;
     font-family: $metropolis-medium
