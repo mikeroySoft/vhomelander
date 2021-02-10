@@ -1,19 +1,36 @@
 {{/* TODO: Create custom shortcode + class for this, allow for customization via config.toml or /assets/scss/_variables_project.scss */}}
 {{/* TODO: Variable for the image, set via config.toml or other datafile */}}
-{{ $_hugo_config := `{ "version": 1 }` }}
+
+{{ $textLead1 := .Get "textLead1" | default "First Value!" }}
+{{ $textLead2 := .Get "textLead2" | default "Second Value" }}
+{{ $textLead3 := .Get "textLead3" | default "Third Value" }}
+
+{{ $textSub1 := .Get "textSub1" | default "At VMware, we recognize that Open Source technology produces better software. We invest in and contribute to the Open Source community. This translates into more innovative, interoperable, scalable and secure solutions for everyone." }}
+{{ $textSub2 := .Get "textSub2" | default "At VMware, we recognize that Open Source technology produces better software. We invest in and contribute to the Open Source community. This translates into more innovative, interoperable, scalable and secure solutions for everyone." }}
+{{ $textSub3 := .Get "textSub3" | default "At VMware, we recognize that Open Source technology produces better software. We invest in and contribute to the Open Source community. This translates into more innovative, interoperable, scalable and secure solutions for everyone." }}
+
+{{ $featuredImg1 := .Get "featuredImg1" | default "administration.svg" }}
+{{ $featuredImg2 := .Get "featuredImg2" | default "authentication.svg" }}
+{{ $featuredImg3 := .Get "featuredImg3" | default "security.svg" }}
+
+{{ $buttonTxt1 := .Get "buttonTxt1" | default "Use Case 1"}}
+{{ $buttonTxt2 := .Get "buttonTxt2" | default "Use Case 2"}}
+{{ $buttonTxt3 := .Get "buttonTxt3" | default "Use Case 3"}}
+
+
 <div class="container-fluid bg-white py-2 mb-5">
     <div class="container use-cases pt-3">
         <h2>Use Cases</h2>
         <div class="container">
             <div class="row card grid two shadow-sm">        
                 <div class="image rounded-left">
-                    <img src="/img/administration.svg" />
+                    <img src="/img/{{ $featuredImg1 }}" />
                 </div>
                 <div class="col text py-5 rounded-right">
-                    <h5 class="card-title">Use Case 1</h5>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h5 class="card-title">{{ $textLead1 }}</h5>
+                    <p> {{ $textSub1 }}</p>
                     <a class="btn btn-secondary btn-outline-primary btn-white" href="#">
-                    Use Case 1
+                    {{ $buttonTxt1 }}
                 </a>
                 </div>
             </div>
@@ -23,14 +40,14 @@
         <div class="container">
             <div class="row card grid two-left image-right shadow-sm">        
                 <div class="col text-right py-5 rounded-left">
-                    <h5 class="card-title">Use Case 2</h5>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h5 class="card-title">{{ $textLead2 }}</h5>
+                    <p>{{ $textSub2 }}</p>
                     <a class="btn btn-secondary btn-outline-primary btn-white" href="#">
-                    Use Case 2
+                    {{ $buttonTxt2}}
                 </a>
                 </div>
                 <div class="image rounded-right">
-                    <img src="/img/authentication.svg" />
+                    <img src="/img/{{ $featuredImg2 }}" />
                 </div>
             </div>
         </div>
@@ -39,13 +56,13 @@
         <div class="container">
             <div class="row card grid two shadow-sm">
                 <div class="col bg-primary text-center d-flex align-items-center justify-content-center rounded-left">
-                    <img src="/img/security.svg" />
+                    <img src="/img/{{ $featuredImg3 }}" />
                 </div>
                 <div class="col card-body text py-5 pl-4">
-                    <h5 class="card-title">Use Case 3</h5>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h5 class="card-title">{{ $textLead3 }}</h5>
+                    <p>{{ $textSub3 }}</p>
                     <a class="btn btn-secondary btn-outline-primary btn-white" href="#">
-                        Use Case 3
+                        {{ $buttonTxt3 }}
                     </a>
                 </div>
             </div>
