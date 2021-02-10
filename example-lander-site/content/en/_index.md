@@ -41,20 +41,20 @@ linkTitle = "vHomelander"
 <!-- blocks/use-cases begin -->
 {{< blocks/use-cases 
 	
-	featureImage1="img.svg"
+	featuredImg1=""
 	textLead1="First Use Case"
 	textSub1="At VMware, we recognize that Open Source technology produces better software. We invest in and contribute to the Open Source community. This translates into more innovative, interoperable, scalable and secure solutions for everyone."
-	buttonTxt1="button"
+	buttonTxt1="Button"
 
-	featureImage2="img.svg"
+	featuredImg2=""
 	textLead2="Second Use Case" 
-	
-	buttonTxt2="button"
+	textSub2="At VMware, we recognize that Open Source technology produces better software. We invest in and contribute to the Open Source community. This translates into more innovative, interoperable, scalable and secure solutions for everyone."
+	buttonTxt2="Button"
 
-	featureImage3="img.svg"
+	featuredImg3=""
 	textLead3="Third Use Case"
-	textSub3="Why is this valueable?"
-	buttonTxt3="button"
+	textSub3="At VMware, we recognize that Open Source technology produces better software. We invest in and contribute to the Open Source community. This translates into more innovative, interoperable, scalable and secure solutions for everyone."
+	buttonTxt3="Button"
 	
 	>}}
 <!-- blocks/use-cases end -->
