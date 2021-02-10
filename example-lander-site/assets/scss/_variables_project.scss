@@ -285,3 +285,13 @@ $container-max-widths: (
   left: 8px;
 }
   //end of fancy try
+
+
+.footer-logo {
+    svg {
+      display: inline-block;
+      margin: 0 10px;
+      max-height: 80px;
+      max-width: 250px;
+  }
+}
