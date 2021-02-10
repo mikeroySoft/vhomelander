@@ -11,11 +11,11 @@
 	
   <nav class="navbar navbar-default navbar-dark navbar-expand-md d-flex justify-content-between {{ if $cover}} td-navbar-cover {{ end }}" role="navigation" data-toggle="collapse" data-target="#menu_items" aria-expanded="false" aria-controls="navbar">
 	<div class="navbar-header d-flex align-items-center justify-content-between">   
-		<a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
+		<a class="navbar-brand navbar-right" href="{{ .Site.Home.RelPermalink }}">
 		<span class="navbar-logo">{{ if .Site.Params.ui.navbar_logo }}{{ with resources.Get "icons/logo.svg" }}{{ ( . | minify).Content | safeHTML }}{{ end }}{{ end }}</span><span class="text-uppercase font-weight-bold">{{ .Site.Title }}</span>
 		</a>
-		<div class="row ml-auto">
-			<button type="button" class="navbar-toggler third-button collapsed" data-toggle="collapse" data-target="#menu_items" aria-expanded="false" aria-controls="navbar">
+		<div class="col-12">
+			<button type="button" class="navbar-toggler third-button collapsed ml-auto" data-toggle="collapse" data-target="#menu_items" aria-expanded="false" aria-controls="navbar">
 				<div class="animated-icon">
 					<span></span>
 					<span></span>
