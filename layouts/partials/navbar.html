@@ -1,10 +1,7 @@
 {{ $cover := .HasShortcode "blocks/cover" }}
-
-{{/* TODO: Need to abstract this mess a bit so a user can pass vars from index.html and/or config.toml and it represents here */}}
-
 {{/* added quick _if eq_ to use a different nav for the /docs/ pages */}}
 {{ if eq .Type "docs" }}
-<div class="container-fluid pl-3 pr-3bg-white" id="navbarish">
+<div class="container-fluid pl-3 pr-3" id="navbarish">
 	{{ else }}
 <div class="container pl-0 pr-3" id="navbarish">
 	{{ end }}
@@ -24,7 +21,6 @@
 			</div>
 		</button>
 	</div>
-
 	<div id="menu_items" class="navbar-collapse collapse ml-md-auto justify-content-end text-center">
 		<ul class="nav navbar-nav">
 		{{ $p := . }}

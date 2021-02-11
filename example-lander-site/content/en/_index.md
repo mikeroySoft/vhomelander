@@ -34,9 +34,19 @@ linkTitle = "vHomelander"
 
 <!-- blocks/homepage-grid End -->
 
+<!-- blocks/intro-three-wide start 
+{{</* blocks/intro-three-wide 
+	textLead1="First Use Case"
+	textLead2="Second Use Case" 
+	*/>}}
+<!-- blocks/intro-three-wide end -->
 <!-- blocks/introduction start -->
-{{< blocks/introduction >}}
+{{< blocks/introduction 
+	textLead1="First Use Case"
+	textLead2="Second Use Case" 
+	>}}
 <!-- blocks/introduction end -->
+
 
 <!-- blocks/use-cases begin -->
 {{< blocks/use-cases 
@@ -59,9 +69,11 @@ linkTitle = "vHomelander"
 	>}}
 <!-- blocks/use-cases end -->
 
+
 <!-- blocks/team begin -->
 {{< blocks/team  >}}
 <!-- blocks/team end -->
+
 
 <!-- blocks/getting-started begin -->
 {{< blocks/getting-started >}}
