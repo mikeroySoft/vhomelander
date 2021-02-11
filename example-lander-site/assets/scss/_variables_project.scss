@@ -33,6 +33,22 @@ $container-max-widths: (
   justify-content: space-between;
 }
 
+// fix container layout for smaller screens maybe?
+
+.container {
+  max-width: 980px;
+  margin: 0px auto;
+  padding: 20px;
+  @include breakpoint(small) {
+      max-width: 100%;
+  }
+  @include breakpoint(medium) {
+    max-width: 100%;
+    padding: 5px;
+  }
+}
+
+
 //     max-width: 980px;
 //     margin: 0px auto;
 //     padding: 20px;
@@ -103,24 +119,14 @@ $container-max-widths: (
   padding-right: 3rem;
   padding-bottom: 2rem;
   padding-left: 3rem;
+
+      @include breakpoint(medium) {
+        padding: 1rem 2rem .5rem;
+        .col:first-of-type {
+            padding-bottom: 50px;
+        }
+    }
 }
-
-// "no mixin named button-size
-// .btn-xl {
-//   @include button-size($btn-padding-y-xl, $btn-padding-x-xl, $btn-font-size-xl, $btn-line-height-xl, $btn-border-radius-xl);
-// }
-
-// $font-family-base: "Metropolis-Light", Helvetica, sans-serif;
-// $metropolis-light: $font-family-base;
-// $metropolis-light-italic: "Metropolis-LightItalic", Helvetica, sans-serif;
-// $metropolis-regular: "Metropolis-Regular", Helvetica, sans-serif;
-// $metropolis-regular-italic: "Metropolis-RegularItalic", Helvetica, sans-serif;
-// $metropolis-medium: "Metropolis-Medium", Helvetica, sans-serif;
-// $metropolis-medium-italic: "Metropolis-MediumItalic", Helvetica, sans-serif;
-// $metropolis-bold: "Metropolis-Bold", Helvetica, sans-serif;
-// $metropolis-bold-italic: "Metropolis-BoldItalic", Helvetica, sans-serif;
-// $metropolis-semibold: "Metropolis-SemiBold", Helvetica, sans-serif;
-// $metropolis-semibold-italic: "Metropolis-SemiBoldItalic", Helvetica, sans-serif;
 
  
 .navbar {
@@ -149,56 +155,6 @@ $container-max-widths: (
     transition: all 0.15s;
 
   }
-
-// // trying something fancy...
-
-// .navbar-toggler span:nth-child(1) {
-//   top: 0px;
-//   -webkit-transform-origin: left center;
-//   -moz-transform-origin: left center;
-//   -o-transform-origin: left center;
-//   transform-origin: left center;
-//   }
-  
-//   .navbar-toggler span:nth-child(2) {
-//   top: 10px;
-//   -webkit-transform-origin: left center;
-//   -moz-transform-origin: left center;
-//   -o-transform-origin: left center;
-//   transform-origin: left center;
-//   }
-  
-//   .navbar-toggler span:nth-child(3) {
-//   top: 20px;
-//   -webkit-transform-origin: left center;
-//   -moz-transform-origin: left center;
-//   -o-transform-origin: left center;
-//   transform-origin: left center;
-//   }
-  
-//   .navbar-toggler.open span:nth-child(1) {
-//   -webkit-transform: rotate(45deg);
-//   -moz-transform: rotate(45deg);
-//   -o-transform: rotate(45deg);
-//   transform: rotate(45deg);
-//   top: 0px;
-//   left: 8px;
-//   }
-  
-//   .navbar-toggler.open span:nth-child(2) {
-//   width: 0%;
-//   opacity: 0;
-//   }
-  
-//   .navbar-toggler.open span:nth-child(3) {
-//   -webkit-transform: rotate(-45deg);
-//   -moz-transform: rotate(-45deg);
-//   -o-transform: rotate(-45deg);
-//   transform: rotate(-45deg);
-//   top: 21px;
-//   left: 8px;
-//  }
-
 
   
 .animated-icon {

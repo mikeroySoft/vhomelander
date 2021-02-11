@@ -76,5 +76,12 @@ linkTitle = "vHomelander"
 
 
 <!-- blocks/getting-started begin -->
-{{< blocks/getting-started >}}
+{{< blocks/getting-started 
+	
+	textLead1="Getting Started"
+	
+	textSub1="See the documentation to help get started with Photon OS"
+	buttonTxt1="Documentation"
+
+	>}}
 <!-- blocks/getting-started end -->
