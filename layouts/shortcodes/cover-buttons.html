@@ -1,9 +1,14 @@
-{{/* TODO: Set these as variables to be passed (buttonText), define some sane defaults */}}
+{{ $buttonTxt1 := .Get "buttonTxt1" | default "Use Case 1"}}
+{{ $buttonLink1 := .Get "buttonLink1" | default "/"}}
+
+{{ $buttonTxt2 := .Get "buttonTxt2" | default "Use Case 1"}}
+{{ $buttonLink2 := .Get "buttonLink2" | default "/"}}
+
 <div>
-	<a class="btn btn-secondary mr-3 text-uppercase" href="#">
-		Learn More
+	<a class="btn btn-secondary mr-3 text-uppercase" href="{{ $buttonLink1 }}">
+		{{ $buttonTxt1 }}
 	</a>
-	<a class="btn btn-primary btn-outline-secondary mr-3 text-uppercase" href="#">
-		Download	
+	<a class="btn btn-primary btn-outline-secondary mr-3 text-uppercase" href="{{ $buttonLink2 }}">
+		{{ $buttonTxt2 }}	
 	</a>
 </div>

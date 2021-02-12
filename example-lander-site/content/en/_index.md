@@ -10,9 +10,20 @@ linkTitle = "vHomelander"
 	color="primary" 
 	font_color="secondary" 
 	subtitle="A Hugo + Bootstrap theme for creating great VMware Open Source sites..." 
->}}
+	buttonTxt1=""
+	buttonLink1="/"
 
-{{< cover-buttons >}}
+	buttonTxt2=""
+	buttonLink2="/"
+	>}}
+
+{{< cover-buttons 
+	buttonTxt1="Learn More"
+	buttonLink1="/docs/"
+
+	buttonTxt2="Download"
+	buttonLink2="https://github.com/vmware/photon/wiki/Downloading-Photon-OS"
+	>}}
 
 {{< /blocks/cover >}}
 <!-- blocks/cover content end -->
@@ -80,7 +91,7 @@ linkTitle = "vHomelander"
 	
 	textLead1="Getting Started"
 	
-	textSub1="See the documentation to help get started with Photon OS"
+	textSub1="See the documentation to help get started with this Open Source Project"
 	buttonTxt1="Documentation"
 
 	>}}

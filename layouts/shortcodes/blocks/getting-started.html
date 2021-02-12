@@ -1,12 +1,17 @@
+
+{{ $textLead1 := .Get "textLead1" | default "First Value!" }}
+{{ $textSub1 := .Get "textSub1" | default "Why Is This  First Value Valuable?" }}
+{{ $buttonTxt1 := .Get "buttonTxt1" | default "Use Case 1"}}
+
 <div class="container-full bg-secondary">
 	<div class="container pl-0">
 		<div class="row p-0 py-5 m-auto align-items-center align-content-center justify-content-between">
 			<div class="left-side pl-3">
-				<h2>Getting Started</h2>
-				<p>Dignissim suspendisse in est ante in nibh mauris.</p>
+				<h2>{{ $textLead1 | html }}</h2>
+				<p>{{ $textSub1 | html }}</p>
 			</div>
 			<div class="float-right pr-5">
-				<a href="#" class="btn btn-white px-5">Velit sed</a>
+				<a href="/docs/" class="btn btn-white px-5">{{ $buttonTxt1 }}</a>
 			</div>
 		</div>
 	</div>
