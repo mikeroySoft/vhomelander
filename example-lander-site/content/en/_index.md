@@ -10,11 +10,6 @@ linkTitle = "vHomelander"
 	color="primary" 
 	font_color="secondary" 
 	subtitle="A Hugo + Bootstrap theme for creating great VMware Open Source sites..." 
-	buttonTxt1=""
-	buttonLink1="/"
-
-	buttonTxt2=""
-	buttonLink2="/"
 	>}}
 
 {{< cover-buttons 
