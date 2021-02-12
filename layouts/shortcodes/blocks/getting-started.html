@@ -2,6 +2,7 @@
 {{ $textLead1 := .Get "textLead1" | default "First Value!" }}
 {{ $textSub1 := .Get "textSub1" | default "Why Is This  First Value Valuable?" }}
 {{ $buttonTxt1 := .Get "buttonTxt1" | default "Use Case 1"}}
+{{ $buttonURL := .Get "buttonURL" | default "/"}}
 
 <div class="container-full bg-secondary">
 	<div class="container pl-0">
@@ -11,7 +12,7 @@
 				<p>{{ $textSub1 | html }}</p>
 			</div>
 			<div class="float-right pr-5">
-				<a href="/docs/" class="btn btn-white px-5">{{ $buttonTxt1 }}</a>
+				<a href="{{ $buttonURL }}" class="btn btn-white px-5">{{ $buttonTxt1 }}</a>
 			</div>
 		</div>
 	</div>
