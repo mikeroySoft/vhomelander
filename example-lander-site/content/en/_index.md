@@ -47,9 +47,17 @@ linkTitle = "vHomelander"
 	*/>}}
 <!-- blocks/intro-three-wide end -->
 <!-- blocks/introduction start -->
-{{< blocks/introduction 
-	textLead1="First Use Case"
-	textLead2="Second Use Case" 
+{{< blocks/downloads 
+	textHead="Download Photon"
+	textBigSub=`Download images for x86, ARM64, Cloud and more`
+	
+	textLead1="ISO Images"
+	textSub1=`Contains everything needed to install. Choose between a minimal or a full installation to suit your deployment needs. Photon can be installed from ISO directly, or can be used with PXE/kickstart environments for automated installations`
+
+	textLead2="OVA Appliance"
+	textSub2=`Portable, ready-to-go virtual environment. Photon OS Open Virtual Appliance packages include a highly sanitized and optimized kernel and packages to streamline and standardize appliance deployments.`
+
+	buttonURL="https://github.com/vmware/photon/wiki/Downloading-Photon-OS" 
 	>}}
 <!-- blocks/introduction end -->
 
@@ -91,6 +99,16 @@ linkTitle = "vHomelander"
 {{< blocks/team  >}}
 <!-- blocks/team end -->
 
+<!-- blocks/introduction start -->
+{{< blocks/license 
+	textLead1="License"
+	textSub1=`The ISO and OVA images are distributed under the<a href="https://github.com/vmware/photon/blob/2.0/installer/EULA.txt">VMware Photon OS EULA.</a> Open source license information may be found the in Photon OS <a href="https://raw.githubusercontent.com/vmware/photon/master/COPYING">Open Source License</a> file.`
+
+
+	textLead2="Support" 
+	textSub2=`Photon OS is released as open source software and provides community support through our GitHub project page. If you encounter an issue or have a question, feel free to reach out on the  <a href="https://github.com/vmware/photon/issues">GitHub issues page for Photon OS</a>.`
+	>}}
+<!-- blocks/introduction end -->
 
 <!-- blocks/getting-started begin -->
 {{< blocks/getting-started 
