@@ -49,7 +49,7 @@ linkTitle = "vHomelander"
 <!-- blocks/introduction start -->
 {{< blocks/downloads 
 	textHead="Download Photon"
-	textBigSub=`Download images for x86, ARM64, Cloud and more`
+	textBigSub=`Download local images for x86, ARM64, Raspberry Pi, as well as Cloud images for AWS, GCE, Azure, along with checksums and previous releases. `
 	
 	textLead1="ISO Images"
 	textSub1=`Contains everything needed to install. Choose between a minimal or a full installation to suit your deployment needs. Photon can be installed from ISO directly, or can be used with PXE/kickstart environments for automated installations`
