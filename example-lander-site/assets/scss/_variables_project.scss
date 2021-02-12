@@ -9,10 +9,10 @@ Add styles or override variables from the theme here.
 
 // tweaks... mroy
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
+  sm: 640px,
+  md: 800px,
   lg: 960px,
-  xl: 1000px
+  xl: 1100px
 ) !default;
 
 .container-full {
@@ -33,11 +33,11 @@ $container-max-widths: (
 
 // fix container layout for smaller screens maybe?
 
-.container-fluid {
-    @include breakpoint(small) {
-      padding: 0px 0px;
-    }
-  }
+// .container-fluid {
+//     @include breakpoint(small) {
+//       padding: 0px 0px;
+//     }
+//   }
 
 
 //     max-width: 980px;
