@@ -75,6 +75,17 @@ linkTitle = "vHomelander"
 	>}}
 <!-- blocks/use-cases end -->
 
+<!-- blocks/getting-started begin -->
+{{< blocks/contributing
+	
+	textLead1="Contributing"
+	
+	textSub1=`The Photon project team welcomes contributions from the community. If you would like to contribute code and you have not signed our Contributor License Agreement (CLA), our CLA-bot will walk you through the process and update the issue when you open a Pull Request.`
+	buttonTxt1="Fork Photon"
+	buttonURL="https://github.com/vmware/photon"
+
+	>}}
+<!-- blocks/getting-started end -->
 
 <!-- blocks/team begin -->
 {{< blocks/team  >}}
