@@ -1,4 +1,3 @@
-
 {{ $textHead := .Get "textHead" | default "Download" }}
 {{ $textBigSub := .Get "textBigSub" | default "All kinds of extra info about your download" }}
 
@@ -15,7 +14,7 @@
 <div class="container-fluid bg-secondary">
 	<div class="container">
 		<div class="d-flex flex-row pt-5 pb-3 m-auto align-items-center justify-content-between ">
-			<div class="col-7 px-0">
+			<div class="col-md-7 col-xs-12 px-0">
 				<h2>{{ $textHead | markdownify }}</h2>
 				<p>{{ $textBigSub | markdownify }}</p>
 			</div>
