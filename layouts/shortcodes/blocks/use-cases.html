@@ -17,6 +17,9 @@
 {{ $buttonTxt2 := .Get "buttonTxt2" | default "Use Case 2"}}
 {{ $buttonTxt3 := .Get "buttonTxt3" | default "Use Case 3"}}
 
+{{ $buttonURL1 := .Get "buttonURL1" | default "/"}}
+{{ $buttonURL2 := .Get "buttonURL2" | default "/"}}
+{{ $buttonURL3 := .Get "buttonURL3" | default "/"}}
 
 <div class="container-fluid bg-white py-2">
     <div class="container use-cases pt-3">
@@ -29,7 +32,7 @@
                 <div class="col text py-5 rounded-right">
                     <h5 class="card-title">{{ $textLead1 }}</h5>
                     <p> {{ $textSub1 }}</p>
-                    <a class="btn btn-secondary btn-outline-primary btn-white" href="#">
+                    <a class="btn btn-secondary btn-outline-primary btn-white" href="{{ $buttonURL1 }}">
                     {{ $buttonTxt1 }}
                 </a>
                 </div>
@@ -42,7 +45,7 @@
                 <div class="col text-right py-5 rounded-left">
                     <h5 class="card-title">{{ $textLead2 }}</h5>
                     <p>{{ $textSub2 }}</p>
-                    <a class="btn btn-secondary btn-outline-primary btn-white" href="#">
+                    <a class="btn btn-secondary btn-outline-primary btn-white" href="{{ $buttonURL2 }}">
                     {{ $buttonTxt2}}
                 </a>
                 </div>
@@ -61,7 +64,7 @@
                 <div class="col card-body text py-5 pl-4">
                     <h5 class="card-title">{{ $textLead3 }}</h5>
                     <p>{{ $textSub3 }}</p>
-                    <a class="btn btn-secondary btn-outline-primary btn-white" href="#">
+                    <a class="btn btn-secondary btn-outline-primary btn-white" href="{{ $buttonURL3 }}">
                         {{ $buttonTxt3 }}
                     </a>
                 </div>
