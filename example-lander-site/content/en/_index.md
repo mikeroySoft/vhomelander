@@ -40,13 +40,7 @@ linkTitle = "vHomelander"
 
 <!-- blocks/homepage-grid End -->
 
-<!-- blocks/intro-three-wide start 
-{{</* blocks/intro-three-wide 
-	textLead1="First Use Case"
-	textLead2="Second Use Case" 
-	*/>}}
-<!-- blocks/intro-three-wide end -->
-<!-- blocks/introduction start -->
+<!-- blocks/downloads start -->
 {{< blocks/downloads 
 	textHead="Download Photon"
 	textBigSub=`Download local images for x86, ARM64, Raspberry Pi, as well as Cloud images for AWS, GCE, Azure, along with checksums and previous releases. `
@@ -59,8 +53,7 @@ linkTitle = "vHomelander"
 
 	buttonURL="https://github.com/vmware/photon/wiki/Downloading-Photon-OS" 
 	>}}
-<!-- blocks/introduction end -->
-
+<!-- blocks/downloads end -->
 
 <!-- blocks/use-cases begin -->
 {{< blocks/use-cases 
@@ -99,7 +92,7 @@ linkTitle = "vHomelander"
 {{< blocks/team  >}}
 <!-- blocks/team end -->
 
-<!-- blocks/introduction start -->
+<!-- blocks/license start -->
 {{< blocks/license 
 	textLead1="License"
 	textSub1=`The ISO and OVA images are distributed under the<a href="https://github.com/vmware/photon/blob/2.0/installer/EULA.txt">VMware Photon OS EULA.</a> Open source license information may be found the in Photon OS <a href="https://raw.githubusercontent.com/vmware/photon/master/COPYING">Open Source License</a> file.`
@@ -108,7 +101,7 @@ linkTitle = "vHomelander"
 	textLead2="Support" 
 	textSub2=`Photon OS is released as open source software and provides community support through our GitHub project page. If you encounter an issue or have a question, feel free to reach out on the  <a href="https://github.com/vmware/photon/issues">GitHub issues page for Photon OS</a>.`
 	>}}
-<!-- blocks/introduction end -->
+<!-- blocks/license end -->
 
 <!-- blocks/getting-started begin -->
 {{< blocks/getting-started 
