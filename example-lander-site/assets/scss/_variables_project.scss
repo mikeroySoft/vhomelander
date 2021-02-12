@@ -15,8 +15,6 @@ $container-max-widths: (
   xl: 1000px
 ) !default;
 
-// todo: new class to do full width, should push this further down in the desgn and provide it as a varialbe option per implementation
-// todo: like: if $config.container-full="true" use .container-full else use .container (or .container-notFull)
 .container-full {
   width: 100%;
   padding-right: 0px; 
@@ -35,18 +33,11 @@ $container-max-widths: (
 
 // fix container layout for smaller screens maybe?
 
-.container {
-  max-width: 980px;
-  margin: 0px auto;
-  padding: 20px;
-  @include breakpoint(small) {
-      max-width: 100%;
+.container-fluid {
+    @include breakpoint(small) {
+      padding: 0px 0px;
+    }
   }
-  @include breakpoint(medium) {
-    max-width: 100%;
-    padding: 5px;
-  }
-}
 
 
 //     max-width: 980px;
