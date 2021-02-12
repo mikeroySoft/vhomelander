@@ -106,17 +106,32 @@ $container-max-widths: (
 
 .p-5w {
   // padding: 2.5rem !important;
-  padding-top: 2rem;
-  padding-right: 3rem;
-  padding-bottom: 2rem;
-  padding-left: 3rem;
+  // padding-top: 2rem;
+  // padding-right: 3rem;
+  // padding-bottom: 1rem;
+  // padding-left: 3rem;
 
-      @include breakpoint(medium) {
-        padding: 1rem 2rem .5rem;
-        .col:first-of-type {
-            padding-bottom: 50px;
-        }
+  padding: 5rem 3rem 1rem 3rem;
+
+  @include breakpoint(extra-large) {
+    padding: 2rem 3rem .5rem; 
+    .col:first-of-type {
+        padding-bottom: 50px;
     }
+}
+    @include breakpoint(large) {
+      padding: 2rem 3rem .5rem; 
+      .col:first-of-type {
+          padding-bottom: 50px;
+      }
+  }
+
+  @include breakpoint(medium) {
+    padding: 2rem 2rem .5rem; 
+    .col:first-of-type {
+        padding-bottom: 50px;
+    }
+  }
 }
 
  
