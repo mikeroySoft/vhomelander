@@ -1,5 +1,4 @@
-{{/* TODO: Create custom shortcode + class for this, allow for customization via config.toml or /assets/scss/_variables_project.scss */}}
-{{/* TODO: Variable for the image, set via config.toml or other datafile */}}
+{{ $headline := .Get "headline" | default "Use Cases" }}
 
 {{ $textLead1 := .Get "textLead1" | default "First Value!" }}
 {{ $textLead2 := .Get "textLead2" | default "Second Value" }}
@@ -23,7 +22,7 @@
 
 <div class="container-fluid bg-white py-2">
     <div class="container use-cases pt-3">
-        <h2>Use Cases</h2>
+        <h2>{{ $headline }}</h2>
         <div class="container">
             <div class="row card grid two shadow-sm">        
                 <div class="image rounded-left">
