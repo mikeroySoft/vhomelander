@@ -30,7 +30,7 @@
                 </div>
                 <div class="col text py-5 rounded-right">
                     <h5 class="card-title">{{ $textLead1 }}</h5>
-                    <p> {{ $textSub1 }}</p>
+                    <p> {{ $textSub1 | markdownify }}</p>
                     <a class="btn btn-secondary btn-outline-primary btn-white" href="{{ $buttonURL1 }}">
                     {{ $buttonTxt1 }}
                 </a>
@@ -43,7 +43,7 @@
             <div class="row card grid two-left image-right shadow-sm">        
                 <div class="col text-right py-5 rounded-left">
                     <h5 class="card-title">{{ $textLead2 }}</h5>
-                    <p>{{ $textSub2 }}</p>
+                    <p>{{ $textSub2 | markdownify }}</p>
                     <a class="btn btn-secondary btn-outline-primary btn-white" href="{{ $buttonURL2 }}">
                     {{ $buttonTxt2}}
                 </a>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="col card-body text py-5 pl-4">
                     <h5 class="card-title">{{ $textLead3 }}</h5>
-                    <p>{{ $textSub3 }}</p>
+                    <p>{{ $textSub3 | markdownify }}</p>
                     <a class="btn btn-secondary btn-outline-primary btn-white" href="{{ $buttonURL3 }}">
                         {{ $buttonTxt3 }}
                     </a>
