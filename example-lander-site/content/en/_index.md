@@ -57,6 +57,8 @@ linkTitle = "vHomelander"
 
 <!-- blocks/use-cases begin -->
 {{< blocks/use-cases 
+
+	headline="Features"
 	
 	featuredImg1=""
 	textLead1="First Use Case"
