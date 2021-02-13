@@ -8,8 +8,8 @@
 	<div class="container">
 		<div class="d-flex flex-row-reverse py-5 m-auto align-items-center justify-content-between">
 			<div class="pl-4 flex-shrink-1">
-				<h2>{{ $textLead1 | html }}</h2>
-				<p>{{ $textSub1 | html }}</p>
+				<h2>{{ $textLead1 | markdownify }}</h2>
+				<p>{{ $textSub1 | markdownify }}</p>
 			</div>
 			<div>
 				<a href="{{ $buttonURL }}" class="btn btn-white px-sm-2 px-md-3 px-lg-5 text-nowrap">{{ $buttonTxt1 }}</a>
