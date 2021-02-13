@@ -1,11 +1,11 @@
-{{ $buttonTxt1 := .Get "buttonTxt1" | default "Use Case 1"}}
+{{ $buttonTxt1 := .Get "buttonTxt1" | default "Button 1"}}
 {{ $buttonLink1 := .Get "buttonLink1" | default "/"}}
 
-{{ $buttonTxt2 := .Get "buttonTxt2" | default "Use Case 1"}}
+{{ $buttonTxt2 := .Get "buttonTxt2" | default "Button 2"}}
 {{ $buttonLink2 := .Get "buttonLink2" | default "/"}}
 
 <div>
-	<a class="btn btn-secondary mr-3 text-uppercase" href="{{ $buttonLink1 }}">
+	<a class="btn btn-white mr-3 text-uppercase" href="{{ $buttonLink1 }}">
 		{{ $buttonTxt1 }}
 	</a>
 	<a class="btn btn-primary btn-outline-secondary mr-3 text-uppercase" href="{{ $buttonLink2 }}">

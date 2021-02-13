@@ -74,9 +74,9 @@ $container-max-widths: (
 }
 
 .btn-white:hover {
-  color: #0091DA !important; 
+  color: $secondary !important; 
   background-color: $primary !important;
-  border-color: #0091DA !important;
+  border-color: $secondary !important;
 }
 
 .btn-white:focus, .btn-white.focus {
@@ -104,13 +104,7 @@ $container-max-widths: (
   box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
 
-.p-5w {
-  // padding: 2.5rem !important;
-  // padding-top: 2rem;
-  // padding-right: 3rem;
-  // padding-bottom: 1rem;
-  // padding-left: 3rem;
-
+.home-grid-cards {
   padding: 5rem 3rem 1rem 3rem;
 
   @include breakpoint(extra-large) {
@@ -132,6 +126,12 @@ $container-max-widths: (
         padding-bottom: 50px;
     }
   }
+}
+
+.home-grid-cards:hover {
+  //color: $primary !important; 
+  background-color: $gray-100 !important;
+  //border-color: $secondary !important;
 }
 
  
