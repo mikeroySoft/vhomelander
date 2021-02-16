@@ -105,7 +105,7 @@ $container-max-widths: (
 }
 
 .home-grid-cards {
-  padding: 5rem 3rem 1rem 3rem;
+  padding: 3rem 1rem 3rem;
 
   @include breakpoint(extra-large) {
     padding: 2rem 3rem .5rem; 
