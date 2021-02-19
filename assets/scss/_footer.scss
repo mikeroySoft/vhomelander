@@ -12,15 +12,20 @@ footer {
     .left-links {
         padding: 0px;
         li {
+            align-items: center;
             img {
-                vertical-align: bottom;
+                //vertical-align: auto;
+                
                 margin-right: 10px;
             }
             a {
-                color: $gray-500;
+                color: $gray-300;
                 font-weight: 300;
-                font-size: 12px;
+                font-size: 1rem;
                 font-family: $metropolis-light;
+            }
+            i {
+                font-size: 2rem;
             }
         }
         .mobile {

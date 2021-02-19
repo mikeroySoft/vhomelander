@@ -2,8 +2,8 @@
 <div class="container">
 <footer class="container-fluid p-0 m-0 py-5 row d-print-none">
   <div class="container-fluid p-0">
-    <div class="row d-flex justify-content-between mx-0">
-      <div class="text-xs-center order-sm-1">
+    <div class="row d-flex justify-content-between align-items-center mx-0">
+      <div class="order-sm-1 left-links">
         {{ with $links }}
         {{ with index . "user" }}
         {{ template "footer-links-block"  . }}
@@ -40,10 +40,12 @@
 {{ define "footer-links-block" }}
 <ul class="list-inline mb-0">
   {{ range . }}
-  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="{{ .name }}" aria-label="{{ .name }}">
-    <!-- Labels will go here, should range through 'name' -->
-    <a class="text-dark" target="_blank" rel="noopener noreferrer" href="{{ .url }}">
-      <i class="{{ .icon }}"></i>
+  <li class="list-inline-item h1 px-3 m-0" data-toggle="tooltip" data-placement="top" title="{{ .name }}" aria-label="{{ .name }}">
+    <a class="text-dark ml-4" target="_blank" rel="noopener noreferrer" href="{{ .url }}">
+      <i class="{{ .icon }}">&nbsp; </i>
+  
+       {{ .name }}
+    
     </a>
   </li>
   {{ end }}
