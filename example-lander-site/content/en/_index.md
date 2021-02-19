@@ -94,7 +94,10 @@ linkTitle = "vHomelander"
 <!-- blocks/getting-started end -->
 
 <!-- blocks/team begin -->
-{{< blocks/team  >}}
+{{< blocks/team  
+	textHead="Team"
+	textSub=`Take a look at this <a href="#">amazing team</a> and all the great work they have done!.`
+	>}}
 <!-- blocks/team end -->
 
 <!-- blocks/license start -->

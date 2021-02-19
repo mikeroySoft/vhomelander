@@ -1,0 +1,30 @@
+team:
+  - membername: Joe Engineer
+    position: The Engineer
+    image: team-placeholder.png
+    ghUser: myGHUsername
+    ghURL: https://github.com
+
+  - membername: Jeff Engineer
+    position: An Engineer
+    image: team-placeholder.png
+    ghUser: myGHUsername
+    ghURL: https://github.com
+
+  - membername: Jane Engineer
+    position: Some Engineer
+    image: team-placeholder.png
+    ghUser: myGHUsername
+    ghURL: https://github.com
+
+  - membername: Jenny Engineer
+    position: Wild Engineer
+    image: team-placeholder.png
+    ghUser: myGHUsername
+    ghURL: https://github.com    
+
+  - membername: Jeremy Engineer
+    position: Epic Engineer
+    image: team-placeholder.png
+    ghUser: myGHUsername
+    ghURL: https://github.com    
