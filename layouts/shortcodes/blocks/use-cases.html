@@ -20,7 +20,7 @@
 {{ $buttonURL2 := .Get "buttonURL2" | default "/"}}
 {{ $buttonURL3 := .Get "buttonURL3" | default "/"}}
 
-<div class="container-fluid bg-white py-2 use-cases">
+<div id="features" class="container-fluid bg-white py-2 use-cases">
     <div class="container use-cases pt-3">
         <h2>{{ $headline }}</h2>
         <div class="container">
@@ -37,8 +37,6 @@
                 </div>
             </div>
         </div>
-
-
         <div class="container">
             <div class="row card grid two-left image-right shadow-sm">        
                 <div class="col text-right py-5 rounded-left">
@@ -53,8 +51,6 @@
                 </div>
             </div>
         </div>
-   
-
         <div class="container">
             <div class="row card grid two shadow-sm">
                 <div class="col bg-primary text-center d-flex align-items-center justify-content-center rounded-left image">

@@ -14,7 +14,7 @@ linkTitle = "vHomelander"
 
 {{< cover-buttons 
 	buttonTxt1="Learn More"
-	buttonLink1="/docs/"
+	buttonLink1="#features"
 
 	buttonTxt2="Download"
 	buttonLink2="https://github.com/vmware/photon/wiki/Downloading-Photon-OS"
@@ -118,6 +118,7 @@ linkTitle = "vHomelander"
 	
 	textSub1="See the documentation to help get started with this Open Source Project"
 	buttonTxt1="Documentation"
+	buttonURL="/docs/"
 
 	>}}
 <!-- blocks/getting-started end -->
