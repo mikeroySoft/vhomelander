@@ -218,6 +218,11 @@ theme = "default"
 [params.print]
 disable_toc = false
 
+# flag to disable github meta links (above right toc, for editing pages in GH directly...) 
+# in case you don't want that
+[params.GHMetaLinks]
+noMetaLinks="true"
+
 [[params.versions]]
   version = "v1 - Latest"
   url = "/docs/"

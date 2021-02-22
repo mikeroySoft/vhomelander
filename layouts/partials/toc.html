@@ -1,8 +1,21 @@
-{{ partial "page-meta-links.html" . }}
-{{ if not .Params.notoc }}
-{{ with .TableOfContents }}
-{{ if ge (len .) 200 }}
-{{ . }}
-{{ end }}
-{{ end }}
-{{ end }}
+{{ if not (.Param "GHMetaLinks.noMetaLinks") }}
+    {{ partial "page-meta-links.html" . }}
+
+    {{ if not .Params.notoc }}
+    {{ with .TableOfContents }}
+    {{ if ge (len .) 200 }}
+    {{ . }}
+    {{ end }}
+    {{ end }}
+    {{ end }}
+
+{{ else }} <br /><br />
+    {{ if not .Params.notoc }}
+    {{ with .TableOfContents }}
+    {{ if ge (len .) 200 }}
+    {{ . }}
+    
+    {{ end }}
+    {{ end }}
+    {{ end }}
+    {{ end }}
