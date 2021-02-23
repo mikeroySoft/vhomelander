@@ -303,3 +303,13 @@ $container-max-widths: (
       max-width: 225px;
   }
 }
+
+// zoomy zoom
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (125% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

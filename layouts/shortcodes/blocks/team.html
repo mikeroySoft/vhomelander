@@ -11,7 +11,7 @@
                 {{ if (fileExists "data/team/team.yaml") }}
                 {{ range .Site.Data.team.team.team }}
                 <div class="bio">
-                    <div class="float-left image">
+                    <div class="float-left image zoom">
                         <img src="/img/{{ .image }}" height=120px width="120px" /> 
                     </div>
                     <div class="float-right info">
