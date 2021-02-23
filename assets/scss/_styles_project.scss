@@ -73,9 +73,9 @@ $container-max-widths: (
 }
 
 .btn-white {
-  color: #0091DA !important;
+  color: $primary !important;
   background-color: #fff !important;
-  border-color: #0091DA !important;
+  border-color: $primary !important;
 }
 
 .btn-white:hover {
@@ -108,6 +108,46 @@ $container-max-widths: (
 .show > .btn-white.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
+
+// 
+
+.btn-green {
+  color: $white !important;
+  background-color: #78be20 !important;
+  border-color: $white !important;
+}
+
+.btn-green:hover {
+  color: $white !important; 
+  background-color: $primary !important;
+  border-color: $secondary !important;
+}
+
+.btn-green:focus, .btn-white.focus {
+  color: #0091DA;
+  background-color: #fff;
+  border-color: #0091DA;
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+.btn-green.disabled, .btn-white:disabled {
+  color: #0091DA;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-green:not(:disabled):not(.disabled):active, .btn-white:not(:disabled):not(.disabled).active,
+.show > .btn-white.dropdown-toggle {
+  color: #0091DA;
+  background-color: #fff;
+  border-color: #0091DA;
+}
+
+.btn-green:not(:disabled):not(.disabled):active:focus, .btn-white:not(:disabled):not(.disabled).active:focus,
+.show > .btn-white.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
 
 .home-grid-cards {
   padding: 3rem 1rem 3rem;
