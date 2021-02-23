@@ -28,7 +28,7 @@ linkTitle = "vHomelander"
 
 	textLead1="First Value"
 	textSub1="Why is this valueable?"
-	gridImg1="technology/vm-line.svg"
+	gridImg1=""
 
 	textLead2="Second Value" 
 	textSub2="Why is this valueable?"
