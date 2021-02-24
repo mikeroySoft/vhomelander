@@ -12,19 +12,19 @@
 {{ $buttonURL := .Get "buttonURL" | default "/"}}
 
 <div class="container-fluid bg-secondary">
-	<div class="container">
+	<div class="container ">
 		<div class="d-flex flex-row pt-5 pb-3 m-auto align-items-center justify-content-between ">
 			<div class="col-md-7 col-xs-12 px-0">
 				<h2>{{ $textHead | markdownify }}</h2>
 				<p>{{ $textBigSub | markdownify }}</p>
 			</div>
 		</div>
-		<div class="container row m-auto">
-			<div class="col ">
+		<div class="container row m-auto grid downloads-grid">
+			<div class="col mb-3 pb-3">
 				<h5>{{ $textLead1 }}</h5>
 				<p class="m-0 text-dark">{{ $textSub1 | markdownify }}</p>
 			</div>
-			<div class="col ">
+			<div class="col">
 				<h5>{{ $textLead2 }}</h5>
 				<p class="m-0 text-dark">{{ $textSub2 | markdownify }}</p>
 			</div>

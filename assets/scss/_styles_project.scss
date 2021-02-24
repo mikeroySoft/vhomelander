@@ -149,35 +149,6 @@ $container-max-widths: (
 }
 
 
-.home-grid-cards {
-  padding: 3rem 1rem 3rem;
-
-  @include breakpoint(extra-large) {
-    padding: 2rem 3rem .5rem; 
-    .col:first-of-type {
-        padding-bottom: 50px;
-    }
-}
-    @include breakpoint(large) {
-      padding: 2rem 3rem .5rem; 
-      .col:first-of-type {
-          padding-bottom: 50px;
-      }
-  }
-
-  @include breakpoint(medium) {
-    padding: 2rem 2rem .5rem; 
-    .col:first-of-type {
-        padding-bottom: 50px;
-    }
-  }
-}
-
-.home-grid-cards:hover {
-  //color: $primary !important; 
-  background-color: $gray-100 !important;
-  //border-color: $secondary !important;
-}
 
  
 .navbar {

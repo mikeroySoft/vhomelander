@@ -5,10 +5,10 @@
 {{ $textSub2 := .Get "textSub2" | default "Why is This Second Value Valuable?" }}
 
 <div class="container-fluid p-0 py-3 bg-info">
-    <div class="container row m-auto py-4">
+    <div class="container row m-auto license-grid py-4">
         <div class="col px-2 mx-2">
             <h5>{{ $textLead1 }}</h5>
-            <p class="m-0 text-dark">{{ $textSub1 | markdownify }}</p>
+            <p class="m-0 mb-3 pb-3 text-dark">{{ $textSub1 | markdownify }}</p>
         </div>
         <div class="col px-2 mx-2">
             <h5>{{ $textLead2 }}</h5>
