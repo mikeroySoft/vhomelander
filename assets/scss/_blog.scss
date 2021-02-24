@@ -2,9 +2,13 @@
 
 .td-blog {
     .td-rss-button {
-        position: absolute;
-        top: 5.5rem;
+        position: relative;
+        width: 125px;
+        align-items: center;
+        //top: 1rem;
         right: 1rem;
+        left: 1rem;
         z-index: 22;
+        float: right;
     }
 }

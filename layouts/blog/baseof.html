@@ -13,16 +13,14 @@
           <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
             {{ partial "sidebar.html" . }}
           </div>
-          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+          <div class="d-none d-xl-block col-xl-2 td-toc pl-0 d-print-none">
             {{ partial "toc.html" . }}
           </div>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5 pr-md-4" role="main">
-            {{ with .CurrentSection.OutputFormats.Get "rss" -}}
-            <a class="btn btn-lg -bg-blue td-rss-button d-none d-lg-block" href="{{ .Permalink | safeURL }}" target="_blank">
-              RSS <i class="fa fa-rss ml-2 "></i>
-            </a>
-            {{ end -}}
             {{ block "main" . }}{{ end }}
+            <div class="container row mt-3">
+              Blogs are also mirrored at&nbsp;<a href="https://blogs.vmware.com/vsphere/tag/photon">blogs.vmware.com</a>
+            </div>
           </main>
         </div>
       </div>

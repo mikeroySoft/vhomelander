@@ -1,8 +1,12 @@
 {{ $cover := .HasShortcode "blocks/cover" }}
 {{/* added quick _if eq_ to use a different nav for the /docs/ pages */}}
 {{ if eq .Type "docs" }}
-<div class="container-fluid pl-3 pr-3" id="navbarish">
-	{{ else }}
+	<div class="container-fluid pl-3 pr-3" id="navbarish">
+
+{{ else if eq .Type "blog" }}
+	<div class="container-fluid pl-3 pr-3" id="navbarish">
+	{{ else }}	
+	
 <div class="container pl-0 pr-3" id="navbarish">
 	{{ end }}
 	
@@ -44,7 +48,7 @@
 		{{ end }}
 		<!-- End of dark mode toggle in navbar -->
 		
-		{{ if  .Site.Params.versions }}
+		{{ if and (eq .Type "docs") .Site.Params.versions }}
 		<div class="navbar-nav dropdown border-0">
 			<li class="nav-item">
 				{{ partial "navbar-version-selector.html" . }}

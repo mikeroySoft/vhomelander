@@ -1,4 +1,4 @@
-{{ if not (.Param "GHMetaLinks.noMetaLinks") }}
+{{ if not (.Param "noMetaLinks") }}
     {{ partial "page-meta-links.html" . }}
 
     {{ if not .Params.notoc }}
