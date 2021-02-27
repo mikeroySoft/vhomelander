@@ -4,8 +4,6 @@ vHomelander is a [Hugo](https://gohugo.io/) theme for technical documentation se
 
 This is not an officially supported VMware product, but we're having fun with it, aren't we?
 
-This theme is a fork of [Docsy](https:/docsy.dev) which is maintained by Google and used for things like Kubernetes documentation.
-
 ## Prerequisites
 
 The following are basic prerequisites for using vHomelander in your site:
@@ -20,15 +18,18 @@ The following are basic prerequisites for using vHomelander in your site:
   ```
   sudo npm install -D --save autoprefixer
   sudo npm install -D --save postcss-cli
-  sudo npm install -D --save postcss
   ```
+
+<!-- ## Example and usage
+
+TODO: Create this repo
+You can find an example project that uses vHomelander in the [vHomelander Example Project repo](https://github.com/mikeroysoft/vhomelander-example).The vHomelander Example Project is hosted at [https://mikeroysoft.github.io/vhomelander/](https://mikeroysoft.github.io/vhomelander/). -->
 
 To use the vHomelander theme for your own site:
 
-  - (Recommended) Clone/fork this [ project](https://github.com/mikeroysoft/vhomelander),
-     which includes a folder 'example-lander-site' that has this theme configured as a submodule.
-      
-    You can customize this pre-configured basic site into your own site by making changes to index.md, team.yaml and config.toml. 
+  - (Recommended) Copy the [example project](https://github.com/mikeroysoft/vhomelander-example),
+     which includes the vHomelander theme as a submodule.
+    You can customize this pre-configured basic site into your own vHomelander themed site. 
     
   
   - Add vHomelander to your existing Hugo site repo's `themes` directory. You can either add vHomelander as a Git submodule, or 
@@ -40,7 +41,7 @@ details about the various usage options.
 
 ## Documentation
 
-vHomelander has its own user guide (using vHomelander, of course!) with lots more information about using the theme, which you will eventually be able to find at [https://vHomelander.dev/](https://vHomelander.dev/) once I finish it... Alternatively you can use Hugo to generate and serve a local copy of the guide (also useful for testing local theme changes), making sure you have installed all the prerequisites listed above:
+vHomelander has its own user guide (using vHomelander, of course!) with lots more information about using the theme, which you can find at [https://vHomelander.dev/](https://vHomelander.dev/). Alternatively you can use Hugo to generate and serve a local copy of the guide (also useful for testing local theme changes), making sure you have installed all the prerequisites listed above:
 
 ```
 git clone --recurse-submodules --depth 1 https://github.com/mikeroysoft/vhomelander.git
@@ -52,10 +53,9 @@ Note: you need the `themesDir` flag when running Hugo because the site files are
 
 ## Contributing 
 
-For a variety of reasons I'm not quite ready to take on contributors to the project outside of VMware.
+Please read [CONTRIBUTING.md](https://github.com/mikeroysoft/vhomelander/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+See also the list of [contributors](https://github.com/mikeroysoft/vhomelander/graphs/contributors) who participated in this project.
 
 ## License 
 
-This project is based on Docsy and its modifications are also licensed under the Apache License 2.0 - see the [LICENSE.md](https://github.com/mikeroysoft/vHomelander/blob/master/LICENSE) file for details
-
-A high-level list of changes from Docsy made can be found [here](CHANGES.md)
+This project is licensed under the Apache License 2.0 - see the [LICENSE.md](https://github.com/mikeroysoft/vHomelander/blob/master/LICENSE) file for details

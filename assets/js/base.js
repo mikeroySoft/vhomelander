@@ -39,6 +39,11 @@ limitations under the License.
         return element.offset().top + element.outerHeight();
     }
 
+    // mroy from theme
+    // $("mobile-menu").click(function() {       
+    //     $("menu") = toggleClass("mobile-menu-visible");
+    // });
+
     // Bootstrap Fixed Header
     $(function() {
         var promo = $(".js-td-cover");
